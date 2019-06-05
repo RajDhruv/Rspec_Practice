@@ -1,0 +1,55 @@
+
+1	
+-I PATH
+
+Adds PATH to the load (require) path that rspec uses when looking for Ruby source files.
+
+2	
+-r, --require PATH
+
+Adds a specific source file to be required in your spec. file(s).
+
+3	
+--fail-fast
+
+With this option, rspec will stop running specs after the first Example fails. By default, rspec runs all specified spec files, no matter how many failures there are.
+
+4	
+-f, --format FORMATTER
+
+This option allows you to specify different output formats. See the section on Formatters for more details about output formats.
+
+5	
+-o, --out FILE
+
+This option directs rspec to write the test results to the output file FILE instead of to standard out.
+
+6	
+-c, --color
+
+Enables color in rspec’s output. Successful Example results will display in green text, failures will print in red text.
+
+7	
+-b, --backtrace
+
+Displays full error backtraces in rspec’s output.
+
+8	
+-w, --warnings
+
+Displays Ruby warnings in rspec’s output.
+
+9	
+-P, --pattern PATTERN
+
+Load and run spec files that match the pattern PATTERN. For example, if you pass -p “*.rb”, rspec will run all Ruby files, not just the ones that end in “_spec.rb”.
+
+10	
+-e, --example STRING
+
+This option directs rspec to run all Examples that contain the text STRING in their descriptions.
+
+11	
+-t, --tag TAG
+
+With this option, rspec will only run examples that contain the tag TAG. Note that TAG is specified as a Ruby symbol. See the section on RSpec Tags for more details.
